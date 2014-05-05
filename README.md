@@ -11,6 +11,10 @@ Requirements
 * An ethernet connection to a DHCP-enabled network and ethernet cable
 * A USB wall adapter and micro-usb cable
 
+Schematic
+---------
+![Resistors are for babies](http://i.imgur.com/xlIMwDb.png)
+
 Setup
 -----
 In the emma_ohnoes.ino file, change the targetUrl variable to the site you want to check the availability for, or a custom AWS health check page to check on specific infrastructure metrics (See: http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-creating-deleting.html#health-checks-creating). If the URL returns any other HTTP status code except 200 OK, Emma O will start pulsing a furious red, otherwise he'll glow a serene blue.
