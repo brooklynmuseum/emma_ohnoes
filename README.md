@@ -4,14 +4,12 @@ Emma-Ō, King and Judge of Hell judges your cloud infrastructure. Read about his
 
 Requirements
 ------------
-A http://www.temboo.com account and a TembooAccount.h file to store your Temboo creds
-Access to a 3D printer with:
-* Transparent blue-ish PLA plastic
-* Opaque black PLA plastic
-An Arduino Yún
-Two 10mmLEDs of the low-voltage variety. Blue and red were used for this project
-An ethernet connection to a DHCP-enabled network and ethernet cable
-A USB wall adapter and micro-usb cable
+* A http://www.temboo.com account and a TembooAccount.h file to store your Temboo creds
+* Access to a 3D printer with transparent blue-ish PLA plastic and opaque black PLA plastic
+* An Arduino Yún
+* Two 10mmLEDs of the low-voltage variety. Blue and red were used for this project
+* An ethernet connection to a DHCP-enabled network and ethernet cable
+* A USB wall adapter and micro-usb cable
 
 Setup
 -----
