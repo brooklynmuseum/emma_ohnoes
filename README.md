@@ -1,6 +1,6 @@
 emma-ohnoes
 ===========
-Emma O, judge of hell judges your cloud infrastructure.
+Emma-Ō, King and Judge of Hell judges your cloud infrastructure. Read about his former life here: http://www.brooklynmuseum.org/opencollection/objects/106257/Emma_-_o_King_and_Judge_of_Hell/image/129764/image
 
 Requirements
 ------------
@@ -19,7 +19,7 @@ In the emma_ohnoes.ino file, change the targetUrl variable to the site you want 
 
 Usage
 -----
-Plug it in, give it a few minutes until Emma turns blue, then wait for US-EAST-1 to start failwhaling to see Emma turn red.
+Plug it in, give it a few minutes until Emma-Ō turns blue, then wait for US-EAST-1 to start failwhaling to see Emma-Ō turn red.
 
 License
 -------

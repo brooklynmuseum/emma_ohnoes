@@ -8,6 +8,8 @@ int whiteLed = 13;
 int redLed = 9;
 int brightness = 0; // Start out LED with no brightness
 int fadeAmount = 5; // Points to fade the LED by
+// Replace our url with your website to check if it's up
+String targetUrl = "http://www.brooklynmuseum.org/healthcheck.php";
 
 void setup() {
   // For debugging, wait until the serial console is connected.
@@ -30,7 +32,7 @@ void loop() {
   // Custom user agent for less confusing logs
   GetChoreo.addInput("RequestHeaders", "{\n    \"User-Agent\": \"Emma Ohnoes (Arduino Yún/Temboo)\"\n}");
   // Replace our healthcheck.php url with your website to check if it's up
-  GetChoreo.addInput("URL", "http://www.brooklynmuseum.org/healthcheck.php");
+  GetChoreo.addInput("URL", targetUrl);
   // Plain GET request
   GetChoreo.setChoreo("/Library/Utilities/HTTP/Get");
   // Run the Choreo, save return code. 0 is ok, 223 means non-200 status from healthcheck
