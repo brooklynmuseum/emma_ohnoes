@@ -2,8 +2,6 @@
 #include <Temboo.h>
 #include "TembooAccount.h" // Contains Temboo account info, you'll need your own
 
-int numRuns = 1;    // Execution count, so this doesn't run forever
-int maxRuns = 10;   // Maximum number of times the Choreo should be executed
 int blueLed = 13;
 int redLed = 9;
 int brightness = 0; // Start out LED with no brightness
