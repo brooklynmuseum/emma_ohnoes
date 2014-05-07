@@ -4,7 +4,7 @@
 
 int numRuns = 1;    // Execution count, so this doesn't run forever
 int maxRuns = 10;   // Maximum number of times the Choreo should be executed
-int whiteLed = 13;
+int blueLed = 13;
 int redLed = 9;
 int brightness = 0; // Start out LED with no brightness
 int fadeAmount = 5; // Points to fade the LED by
@@ -17,7 +17,7 @@ void setup() {
   //delay(4000);
   //while(!Serial);
   Bridge.begin();
-  pinMode(whiteLed, OUTPUT);
+  pinMode(blueLed, OUTPUT);
   pinMode(redLed, OUTPUT);
 }
 
@@ -41,7 +41,7 @@ void loop() {
   // AWSPOCALYPSE!
   if (returnCode == 223) {
     // switch off white light
-    digitalWrite(whiteLed, LOW);
+    digitalWrite(blueLed, LOW);
     pulseRedLed();
   }
   else { // Emma O's in his heaven. All's right in the world.
@@ -52,7 +52,7 @@ void loop() {
       // turn off red led in case it was on
       analogWrite(redLed, 0);
       // turn on white light to indicate Temboo's working at least
-      digitalWrite(whiteLed, HIGH);
+      digitalWrite(blueLed, HIGH);
     }
   }
   
